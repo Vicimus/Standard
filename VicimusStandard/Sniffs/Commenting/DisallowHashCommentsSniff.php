@@ -1,8 +1,6 @@
 <?php
 
-namespace Vicimus\Standard\Sniffs\Commenting;
-
-class DisallowHashCommentsSniff implements \PHP_CodeSniffer_Sniff
+class VicimusStandard_Sniffs_Commenting_DisallowHashCommentsSniff implements \PHP_CodeSniffer_Sniff
 {
     /**
      * Returns the token types that this sniff is interested in.
