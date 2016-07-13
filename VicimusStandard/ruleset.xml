@@ -9,9 +9,8 @@
  <rule ref="Generic.PHP.DisallowShortOpenTag"/>
  <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
  <rule ref="PEAR.Commenting.FunctionComment"/>
- <rule ref="PEAR.Commenting.ClassComment" />
+<!--  <rule ref="PEAR.Commenting.ClassComment" /> -->
  <rule ref="PEAR.WhiteSpace.ScopeIndent"/>
-
  <!-- Lines can be 85 chars long, but never show errors -->
  <rule ref="Generic.Files.LineLength">
   <properties>
