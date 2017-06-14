@@ -4,7 +4,6 @@
 
   <!-- Include some additional sniffs from the Generic standard -->
     <rule ref="Generic.Commenting.DocComment"/>
-
     <rule ref="Squiz.Commenting.FunctionComment.TypeHintMissing"/>
     <rule ref="Squiz.Commenting.FunctionComment.ScalarTypeHintMissing"/>
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
