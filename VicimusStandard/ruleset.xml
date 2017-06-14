@@ -3,7 +3,16 @@
   <description>A custom coding standard.</description>
 
   <!-- Include some additional sniffs from the Generic standard -->
-    <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
+    <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
+        <exclude name="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.YodaComparison"/>
+        <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
+        <exclude name="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>
+    </rule>
     <rule ref="Squiz.Commenting.FunctionComment.TypeHintMissing"/>
     <rule ref="Squiz.Commenting.FunctionComment.ScalarTypeHintMissing"/>
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
