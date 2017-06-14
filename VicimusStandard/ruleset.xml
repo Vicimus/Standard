@@ -21,7 +21,6 @@
       </properties>
      </rule>
      <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
-        <exclude name="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.YodaComparison"/>
         <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword"/>

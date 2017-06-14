@@ -3,6 +3,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
+        "php": ">=7.1",
         "slevomat/coding-standard": "^3.0"
     }
 }

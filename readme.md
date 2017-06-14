@@ -77,3 +77,45 @@ Ensures all methods are commented with accurate doc blocks.
 
 Enforces a soft character limit of 80 characters, and will throw an error if
 it exceeds 120.
+
+### TypeHintDeclaration #
+
+### ReferenceThrowableOnly #
+
+### DeclareStrictTypes #
+
+### AssignmentInCondition #
+
+### DisallowEqualOperators #
+
+### UnusedPrivateElements #
+
+### UnusedUses #
+
+### UseFromSameNamespace #
+
+### DeadCatch #
+
+### TrailingArrayComma #
+
+### AlphabeticallySortedUses #
+
+### LongTypeHints #
+
+### ClassConstantVisibility #
+
+### ReturnTypeHintSpacing #
+
+### NullableTypeForNullDefaultValue #
+
+### ParameterTypeHintSpacing #
+
+### DisallowGroupUse #
+
+### MultipleUsesPerLine #
+
+### ReferenceUsedNamesOnly #
+
+### UseDoesNotStartWithBackslash #
+
+### InlineDocCommentDeclaration #
