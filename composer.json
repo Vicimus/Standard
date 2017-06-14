@@ -1,5 +1,8 @@
 {
     "name": "vicimus/standard",
     "license": "MIT",
-    "type": "project"
+    "type": "project",
+    "require": {
+        "slevomat/coding-standard": "^3.0"
+    }
 }
