@@ -22,7 +22,7 @@ The following rules expand upon PSR2s coding standards.
 
 Ensures that all array definitions use the short syntax `[]` instead of long `array()`.
 
-### Trailing Arra yComma #
+### Trailing Array Comma #
 
 Commas after last element in an array make adding a new element easier and result in a cleaner versioning diff.
 
