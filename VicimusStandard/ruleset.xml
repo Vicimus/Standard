@@ -29,5 +29,5 @@
         <exclude name="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces"/>
         <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>
     </rule>
-
+    <rule ref="Symfony.Functions.ScopeOrder"/>
 </ruleset>
