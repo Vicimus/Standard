@@ -7,7 +7,7 @@ use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Standards\PEAR\Sniffs\Commenting\FileCommentSniff;
 use SlevomatCodingStandard\Helpers\TokenHelper;
 
-class VisibilityOrderSniff extends FileCommentSniff
+class AlphabeticalConstSniff extends FileCommentSniff
 {
     /**
      * Returns an array of tokens this test wants to listen for.
@@ -44,26 +44,30 @@ class VisibilityOrderSniff extends FileCommentSniff
         $previousName = '';
         $previousVisibility = null;
         $previousVisCode = null;
-        $previousVisString = null;
 
-        while (($propertyTokenPointer = TokenHelper::findNext($phpcsFile, T_VARIABLE, $findPropertiesStartTokenPointer, $classToken['scope_closer'])) !== null) {
+        while (($propertyTokenPointer = TokenHelper::findNext($phpcsFile, T_CONST, $findPropertiesStartTokenPointer, $classToken['scope_closer'])) !== null) {
             $propertyToken = $tokens[$propertyTokenPointer];
             $visibilityModifiedTokenPointer = TokenHelper::findPreviousEffective($phpcsFile, $propertyTokenPointer - 1);
             $visibilityModifiedToken = $tokens[$visibilityModifiedTokenPointer];
 
-            $visibility = $this->visibilityValue($visibilityModifiedToken['code']);
-            $visString = $this->visibility($visibilityModifiedToken['code']);
+            $visibility = $this->visibility($visibilityModifiedToken['code']);
             $visCode = $visibilityModifiedToken['code'];
-
-            if ($visibility === null) {
+            if (!$visibility) {
                 $findPropertiesStartTokenPointer = $propertyTokenPointer + 1;
                 continue;
             }
 
 
-            $name = substr($propertyToken['content'], 1);
-            if ($previousVisibility && $previousVisibility > $visibility) {
-                $error = 'Property ['. $visString . ' ' . $name.'] should be before property ['. $previousVisString . ' ' .$previousName.']';
+
+            //$name = substr($propertyToken['content'], 1);
+            $name = $tokens[TokenHelper::findNextEffective($phpcsFile, $findPropertiesStartTokenPointer + 1)]['content'];
+            if ($name === $visibility) {
+                $findPropertiesStartTokenPointer = $propertyTokenPointer + 1;
+                continue;
+            }
+
+            if ($previousName && strcmp($name, $previousName) < 0 && $visCode === $previousVisCode) {
+                $error = '['. $visibility . ' const ' . $name.'] should be alphabetically before ['. $previousVisibility . ' const ' .$previousName.']';
 
                 $phpcsFile->addError(
                     $error,
@@ -75,26 +79,8 @@ class VisibilityOrderSniff extends FileCommentSniff
             $previousName = $name;
             $previousVisibility = $visibility;
             $previousVisCode = $visCode;
-            $previousVisString = $visString;
             $findPropertiesStartTokenPointer = $propertyTokenPointer + 1;
         }
-    }
-
-    protected function visibilityValue($code): ?string
-    {
-        if ($code === T_PRIVATE) {
-            return 2;
-        }
-
-        if ($code === T_PROTECTED) {
-            return 1;
-        }
-
-        if ($code === T_PUBLIC) {
-            return 0;
-        }
-
-        return null;
     }
 
     protected function visibility($code): ?string
