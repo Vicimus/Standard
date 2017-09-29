@@ -32,6 +32,10 @@ class AlphabeticalMethodSniff extends FileCommentSniff
      */
     public function process(File $phpcsFile, $stackPtr)
     {
+        if ($this->isTest($phpcsFile)) {
+            return;
+        }
+
         $tokens = $phpcsFile->getTokens();
         $function = $stackPtr;
 
@@ -99,5 +103,17 @@ class AlphabeticalMethodSniff extends FileCommentSniff
                 }
             }
         }
+    }
+
+    /**
+     * Check if the file is a test or not
+     *
+     * @param File $file The file object
+     *
+     * @return bool
+     */
+    protected function isTest(File $file): bool
+    {
+        return stripos($file->path, '/tests/') !== false;
     }
 }
