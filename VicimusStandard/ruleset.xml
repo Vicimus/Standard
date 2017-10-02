@@ -12,6 +12,7 @@
     <rule ref="Generic.PHP.DisallowShortOpenTag"/>
     <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
     <rule ref="Squiz.Commenting.DocCommentAlignment"/>
+    <rule ref="PSR2"/>
     <rule ref="PEAR.Commenting.FunctionComment"/>
      <rule ref="Generic.Files.LineLength">
       <properties>

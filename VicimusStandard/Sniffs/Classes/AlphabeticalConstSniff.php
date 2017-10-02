@@ -61,6 +61,11 @@ class AlphabeticalConstSniff extends FileCommentSniff
 
             //$name = substr($propertyToken['content'], 1);
             $name = $tokens[TokenHelper::findNextEffective($phpcsFile, $findPropertiesStartTokenPointer + 1)]['content'];
+            if ($name === 'use') {
+                $findPropertiesStartTokenPointer = $propertyTokenPointer + 1;
+                continue;
+            }
+
             if ($name === $visibility) {
                 $findPropertiesStartTokenPointer = $propertyTokenPointer + 1;
                 continue;
