@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <ruleset name="VicimusStandard">
   <description>A custom coding standard.</description>
+    <autoload>../vendor/autoload.php</autoload>
   <!-- Include some additional sniffs from the Generic standard -->
     <rule ref="Generic.Commenting.DocComment"/>
     <rule ref="Squiz.Commenting.FunctionComment.TypeHintMissing"/>
@@ -20,7 +21,7 @@
        <property name="absoluteLineLimit" value="120"/>
       </properties>
      </rule>
-     <rule ref="vendor/slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
+     <rule ref="../vendor/slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">
         <exclude name="SlevomatCodingStandard.ControlStructures.YodaComparison"/>
         <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword"/>
@@ -29,10 +30,10 @@
         <exclude name="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces"/>
         <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>
     </rule>
-    <rule ref="vendor/escapestudios/symfony2-coding-standard/Symfony/Sniffs/Functions/ScopeOrderSniff.php"/>
-    <rule ref="vendor/escapestudios/symfony2-coding-standard/Symfony/Sniffs/Arrays/MultiLineArrayCommaSniff.php"/>
-    <rule ref="vendor/escapestudios/symfony2-coding-standard/Symfony/Sniffs/Classes/MultipleClassesOneFileSniff.php"/>
-    <rule ref="vendor/escapestudios/symfony2-coding-standard/Symfony/Sniffs/Classes/PropertyDeclarationSniff.php"/>
-    <rule ref="vendor/escapestudios/symfony2-coding-standard/Symfony/Sniffs/Formatting/ReturnOrThrowSniff.php"/>
-    <rule ref="vendor/escapestudios/symfony2-coding-standard/Symfony/Sniffs/Scope/MethodScopeSniff.php"/>
+    <rule ref="../vendor/escapestudios/symfony2-coding-standard/Symfony/Sniffs/Functions/ScopeOrderSniff.php"/>
+    <rule ref="../vendor/escapestudios/symfony2-coding-standard/Symfony/Sniffs/Arrays/MultiLineArrayCommaSniff.php"/>
+    <rule ref="../vendor/escapestudios/symfony2-coding-standard/Symfony/Sniffs/Classes/MultipleClassesOneFileSniff.php"/>
+    <rule ref="../vendor/escapestudios/symfony2-coding-standard/Symfony/Sniffs/Classes/PropertyDeclarationSniff.php"/>
+    <rule ref="../vendor/escapestudios/symfony2-coding-standard/Symfony/Sniffs/Formatting/ReturnOrThrowSniff.php"/>
+    <rule ref="../vendor/escapestudios/symfony2-coding-standard/Symfony/Sniffs/Scope/MethodScopeSniff.php"/>
 </ruleset>
