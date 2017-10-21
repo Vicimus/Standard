@@ -11,6 +11,7 @@
     <rule ref="Generic.PHP.LowerCaseConstant"/>
     <rule ref="Generic.PHP.DisallowShortOpenTag"/>
     <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+    <rule ref="Generic.Formatting.SpaceAfterCastSniff"/>
     <rule ref="Squiz.Commenting.DocCommentAlignment"/>
     <rule ref="PSR2"/>
     <rule ref="PEAR.Commenting.FunctionComment"/>
