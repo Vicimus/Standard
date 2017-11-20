@@ -5,6 +5,7 @@
     "require": {
         "php": ">=7.1",
         "slevomat/coding-standard": "~3",
-        "escapestudios/symfony2-coding-standard": "~3"
+        "escapestudios/symfony2-coding-standard": "~3",
+        "phpmd/phpmd": "^2.6"
     }
 }
