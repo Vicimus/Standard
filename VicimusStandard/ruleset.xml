@@ -67,7 +67,6 @@
     <rule ref="Squiz.Commenting.FunctionComment.ScalarTypeHintMissing"/>
     <rule ref="Squiz.Commenting.FunctionCommentThrowTag"/>
     <rule ref="Squiz.Commenting.PostStatementComment"/>
-    <rule ref="Squiz.Commenting.VariableComment"/>
     <rule ref="Squiz.ControlStructures.ControlSignature"/>
     <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration"/>
     <rule ref="Squiz.ControlStructures.ForLoopDeclaration"/>
@@ -79,7 +78,6 @@
     <rule ref="Squiz.Functions.FunctionDuplicateArgument"/>
     <rule ref="Squiz.Functions.LowercaseFunctionKeywords"/>
     <rule ref="Squiz.Functions.MultiLineFunctionDeclaration"/>
-    <rule ref="Squiz.NamingConventions.ValidFunctionName"/>
     <rule ref="Squiz.Operators.IncrementDecrementUsage"/>
     <rule ref="Squiz.Operators.ValidLogicalOperators"/>
     <rule ref="Squiz.PHP.CommentedOutCode"/>
