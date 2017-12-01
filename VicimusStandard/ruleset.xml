@@ -60,8 +60,6 @@
     <rule ref="Squiz.Classes.SelfMemberReference"/>
     <rule ref="Squiz.Classes.ValidClassName"/>
     <rule ref="Squiz.Commenting.DocCommentAlignment"/>
-    <rule ref="Squiz.Commenting.ClassComment"/>
-    <rule ref="Squiz.Commenting.EmptyCatchComment"/>
     <rule ref="Squiz.Commenting.FunctionComment.TypeHintMissing"/>
     <rule ref="Squiz.Commenting.FunctionComment.ScalarTypeHintMissing"/>
     <rule ref="Squiz.Commenting.FunctionCommentThrowTag"/>
@@ -78,7 +76,6 @@
     <rule ref="Squiz.Functions.MultiLineFunctionDeclaration"/>
     <rule ref="Squiz.Operators.IncrementDecrementUsage"/>
     <rule ref="Squiz.Operators.ValidLogicalOperators"/>
-    <rule ref="Squiz.PHP.CommentedOutCode"/>
     <rule ref="Squiz.PHP.DisallowMultipleAssignments"/>
     <rule ref="Squiz.PHP.DisallowObEndFlush"/>
     <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops"/>
