@@ -71,7 +71,6 @@
     <rule ref="Squiz.ControlStructures.ForLoopDeclaration"/>
     <rule ref="Squiz.ControlStructures.InlineIfDeclaration"/>
     <rule ref="Squiz.ControlStructures.LowercaseDeclaration"/>
-    <rule ref="Squiz.ControlStructures.SwitchDeclaration"/>
     <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
     <rule ref="Squiz.Functions.FunctionDeclaration"/>
     <rule ref="Squiz.Functions.FunctionDuplicateArgument"/>
