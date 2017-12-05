@@ -9,7 +9,6 @@
     <!-- Generics -->
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Generic.ControlStructures.InlineControlStructure"/>
-    <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
     <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
     <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
     <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
@@ -70,7 +69,6 @@
     <rule ref="Squiz.ControlStructures.ForLoopDeclaration"/>
     <rule ref="Squiz.ControlStructures.InlineIfDeclaration"/>
     <rule ref="Squiz.ControlStructures.LowercaseDeclaration"/>
-    <rule ref="Squiz.ControlStructures.SwitchDeclaration"/>
     <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
     <rule ref="Squiz.Functions.FunctionDeclaration"/>
     <rule ref="Squiz.Functions.FunctionDuplicateArgument"/>
