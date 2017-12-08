@@ -45,7 +45,7 @@
         "declaration-block-no-redundant-longhand-properties": true,
         "declaration-no-important": true,
         "declaration-block-single-line-max-declarations": 1,
-        "max-nesting-depth": 3,
+        "max-nesting-depth": 5,
         "no-unknown-animations": true,
         "color-hex-case": "upper",
         "color-hex-length": "short",
@@ -106,7 +106,7 @@
         "selector-type-case": "lower",
         "selector-list-comma-newline-after": "always-multi-line",
         "selector-list-comma-newline-before": "never-multi-line",
-        "selector-list-comma-space-after": "always",
+        "selector-list-comma-space-after": "always-single-line",
         "selector-list-comma-space-before": "never",
         "rule-empty-line-before": ["always", {
             "except": ["first-nested"]
@@ -131,7 +131,7 @@
         "comment-whitespace-inside": "always",
         "indentation": 4,
         "max-empty-lines": 1,
-        "max-line-length": 80,
+        "max-line-length": 120,
         "no-eol-whitespace": true,
         "no-missing-end-of-source-newline": true
     }
