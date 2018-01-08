@@ -25,4 +25,6 @@
             <property name="exceptions" value="id,r,on,ex" />
         </properties>
     </rule>
+
+    <exclude-pattern>*Test.php</exclude-pattern>
 </ruleset>
