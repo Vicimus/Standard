@@ -93,11 +93,11 @@
     <rule ref="Squiz.Scope.StaticThisUsage"/>
     <rule ref="Squiz.Strings.DoubleQuoteUsage"/>
     <rule ref="Squiz.Strings.EchoedStrings"/>
-    <rule ref="Squiz.Whitespace.LanguageConstructSpacing"/>
-    <rule ref="Squiz.Whitespace.LogicalOperatorSpacing"/>
-    <rule ref="Squiz.Whitespace.OperatorSpacing"/>
-    <rule ref="Squiz.Whitespace.PropertyLabelSpacing"/>
-    <rule ref="Squiz.Whitespace.SemicolonSpacing"/>
+    <!--<rule ref="Squiz.Whitespace.LanguageConstructSpacing"/>-->
+    <!--<rule ref="Squiz.Whitespace.LogicalOperatorSpacing"/>-->
+    <!--<rule ref="Squiz.Whitespace.OperatorSpacing"/>-->
+    <!--<rule ref="Squiz.Whitespace.PropertyLabelSpacing"/>-->
+    <!--<rule ref="Squiz.Whitespace.SemicolonSpacing"/>-->
 
     <!-- Zend -->
     <rule ref="Zend.Files.ClosingTag"/>
