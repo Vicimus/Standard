@@ -114,7 +114,7 @@
 
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations">
         <properties>
-            <property name="forbiddenAnnotations" value="@author,@created,@version,@package,@copyright,@license"
+            <property name="forbiddenAnnotations" value="@author,@created,@version,@package,@copyright,@license"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
