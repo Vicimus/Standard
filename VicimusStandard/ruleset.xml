@@ -114,7 +114,7 @@
 
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations">
         <properties>
-            <property name="forbiddenAnnotations" value="@author,@created,@version,@package,@copyright,@license"/>
+            <property name="forbiddenAnnotations" type="array" value="@author,@created,@version,@package,@copyright,@license"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
@@ -130,7 +130,7 @@
     <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
 
-    <rule ref="SlevomatCodingStandard.Functions.StaticClosureSniff"/>
+    <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/>
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
 
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
