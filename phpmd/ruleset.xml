@@ -12,18 +12,16 @@
     <!--<rule ref="rulesets/unusedcode.xml" />-->
     <rule ref="rulesets/cleancode.xml">
         <exclude name="StaticAccess"/>
-	<exclude name="BooleanArgumentFlag"/>
+	    <exclude name="BooleanArgumentFlag"/>
     </rule>
     <rule ref="rulesets/codesize.xml" />
     <rule ref="rulesets/controversial.xml"/>
     <rule ref="rulesets/design.xml">
-        <properties>
-            <property name="minimum" value="20"/>
-        </properties>
+        <exclude name="CouplingBetweenObjects"/>
     </rule>
     <rule ref="rulesets/naming.xml/ShortVariable">
         <properties>
-            <property name="exceptions" value="id,r,on,ex" />
+            <property name="exceptions" value="id,r,on,ex,a,b" />
         </properties>
     </rule>
 

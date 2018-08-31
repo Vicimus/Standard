@@ -105,15 +105,34 @@
 
     <!-- Slevomat Rules -->
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
-    <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
+
     <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
+    <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
+    <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNamingSniff"/>
+    <rule ref="SlevomatCodingStandard.Classes.SuperfluousInterfaceClassNamingSniff"/>
+    <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
+
+    <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations">
+        <properties>
+            <property name="forbiddenAnnotations" value="@author,@created,@version,@package,@copyright,@license"
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
+
     <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEqualOperators"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
+
     <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
+
+    <rule ref="SlevomatCodingStandard.Functions.StaticClosureSniff"/>
+    <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
+
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
         <properties>
@@ -125,12 +144,24 @@
     <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine"/>
     <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
+
+    <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>
+
+    <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/>
+    <rule ref="SlevomatCodingStandard.PHP.TypeCast"/>
+
     <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
     <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
+
+    <rule ref="SlevomatCodingStandard.Variables.UnusedVariable"/>
+    <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
 
     <!-- Symfony -->
     <rule ref="Symfony/Sniffs/Functions/ScopeOrderSniff.php"/>
