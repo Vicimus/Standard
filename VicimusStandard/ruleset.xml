@@ -108,8 +108,8 @@
 
     <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
     <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
-    <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNamingSniff"/>
-    <rule ref="SlevomatCodingStandard.Classes.SuperfluousInterfaceClassNamingSniff"/>
+    <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming"/>
+    <rule ref="SlevomatCodingStandard.Classes.SuperfluousInterfaceClassNaming"/>
     <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
 
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations">
