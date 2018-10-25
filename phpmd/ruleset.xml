@@ -17,7 +17,7 @@
     <rule ref="rulesets/codesize.xml" />
     <rule ref="rulesets/codesize.xml/ExcessiveMethodLength">
         <properties>
-            <property name="minimum" value="25" />
+            <property name="minimum" value="26" />
             <property name="ignore-whitespace" value="true" />
         </properties>
     </rule>
