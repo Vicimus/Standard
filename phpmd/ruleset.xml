@@ -15,6 +15,12 @@
 	    <exclude name="BooleanArgumentFlag"/>
     </rule>
     <rule ref="rulesets/codesize.xml" />
+    <rule ref="rulesets/codesize.xml/ExcessiveMethodLength">
+        <properties>
+            <property name="minimum" value="25" />
+            <property name="ignore-whitespace" value="true" />
+        </properties>
+    </rule>
     <rule ref="rulesets/controversial.xml"/>
     <rule ref="rulesets/design.xml">
         <exclude name="CouplingBetweenObjects"/>
