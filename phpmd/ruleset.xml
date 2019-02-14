@@ -21,6 +21,11 @@
             <property name="ignore-whitespace" value="true" />
         </properties>
     </rule>
+    <rule ref="rulesets/codesize.xml/TooManyMethods">
+        <properties>
+            <property name="maxmethods" value="19" />
+        </properties>
+    </rule>
     <rule ref="rulesets/controversial.xml"/>
     <rule ref="rulesets/design.xml">
         <exclude name="CouplingBetweenObjects"/>
