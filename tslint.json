@@ -37,7 +37,10 @@
         "jsdoc-format": true,
         "label-position": true,
         "max-classes-per-file": [true, 1],
-        "max-func-body-length": [true, 25],
+        "max-func-body-length": [true, {
+            "method-body-length": 25,
+            "ignore-comments": true
+        }],
         "max-line-length": [
             true,
             120
