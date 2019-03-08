@@ -126,7 +126,8 @@
     <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
 
-    <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
+    <!-- Below is php7 only -->
+    <!--<rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>-->
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
 
     <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/>
@@ -151,6 +152,7 @@
     <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/>
     <rule ref="SlevomatCodingStandard.PHP.TypeCast"/>
 
+    <!-- These are php7 only -->
     <!--<rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>-->
     <!--<rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>-->
     <!--<rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>-->
