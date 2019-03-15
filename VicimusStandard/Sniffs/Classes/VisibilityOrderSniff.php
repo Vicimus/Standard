@@ -80,7 +80,7 @@ class VisibilityOrderSniff extends FileCommentSniff
         }
     }
 
-    protected function visibilityValue($code): ?string
+    protected function visibilityValue($code)
     {
         if ($code === T_PRIVATE) {
             return 2;
@@ -97,7 +97,7 @@ class VisibilityOrderSniff extends FileCommentSniff
         return null;
     }
 
-    protected function visibility($code): ?string
+    protected function visibility($code)
     {
         if ($code === T_PRIVATE) {
             return 'private';
