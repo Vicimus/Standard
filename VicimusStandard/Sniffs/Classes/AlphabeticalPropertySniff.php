@@ -75,7 +75,7 @@ class AlphabeticalPropertySniff extends FileCommentSniff
         }
     }
 
-    protected function visibility($code): ?string
+    protected function visibility($code)
     {
         if ($code === T_PRIVATE) {
             return 'private';

@@ -112,7 +112,7 @@ class AlphabeticalMethodSniff extends FileCommentSniff
      *
      * @return bool
      */
-    protected function isTest(File $file): bool
+    protected function isTest(File $file)
     {
         return stripos($file->path, '/tests/') !== false;
     }
