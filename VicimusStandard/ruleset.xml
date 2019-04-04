@@ -6,6 +6,9 @@
     <!-- PSR2 -->
     <rule ref="PSR2"/>
 
+    <!-- Vicimus -->
+    <rule ref="VicimusStandard.Whitespace.BlankLines"/>
+    
     <!-- Generics -->
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Generic.ControlStructures.InlineControlStructure"/>
@@ -33,7 +36,9 @@
     <rule ref="Generic.Formatting.SpaceAfterCast"/>
     <rule ref="Generic.Functions.CallTimePassByReference"/>
     <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
-    <rule ref="Generic.Metrics.CyclomaticComplexity"/>
+    <rule ref="Generic.Metrics.CyclomaticComplexity">
+        <type>error</type>
+    </rule>
     <rule ref="Generic.Metrics.NestingLevel"/>
     <rule ref="Generic.NamingConventions.CamelCapsFunctionName"/>
     <!-- Commented out the below because it was getting confused if you had a method with the same name as the class -->
@@ -77,6 +82,9 @@
     <rule ref="Squiz.Functions.MultiLineFunctionDeclaration"/>
     <rule ref="Squiz.Operators.IncrementDecrementUsage"/>
     <rule ref="Squiz.Operators.ValidLogicalOperators"/>
+    <rule ref="Squiz.PHP.CommentedOutCode">
+        <type>error</type>
+    </rule>
     <rule ref="Squiz.PHP.DisallowMultipleAssignments"/>
     <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops"/>
     <rule ref="Squiz.PHP.DiscouragedFunctions"/>
@@ -96,6 +104,8 @@
     <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
     <rule ref="Squiz.WhiteSpace.PropertyLabelSpacing"/>
     <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
+    <rule ref="Squiz.WhiteSpace.CastSpacing"/>
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
 
     <!-- Zend -->
     <rule ref="Zend.Files.ClosingTag"/>
@@ -120,7 +130,7 @@
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
 
     <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>
-    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEqualOperators"/>
+    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
