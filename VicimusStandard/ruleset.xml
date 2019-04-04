@@ -96,6 +96,7 @@
     <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
     <rule ref="Squiz.WhiteSpace.PropertyLabelSpacing"/>
     <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
+    <rule ref="Squiz.WhiteSpace.CastSpacingSniff"/>
 
     <!-- Zend -->
     <rule ref="Zend.Files.ClosingTag"/>
