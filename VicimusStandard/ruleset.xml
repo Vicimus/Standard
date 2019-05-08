@@ -8,7 +8,7 @@
 
     <!-- Vicimus -->
     <rule ref="VicimusStandard.Whitespace.BlankLines"/>
-    
+
     <!-- Generics -->
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Generic.ControlStructures.InlineControlStructure"/>
@@ -179,5 +179,4 @@
     <rule ref="Symfony/Sniffs/Classes/MultipleClassesOneFileSniff.php"/>
     <rule ref="Symfony/Sniffs/Classes/PropertyDeclarationSniff.php"/>
     <rule ref="Symfony/Sniffs/Formatting/ReturnOrThrowSniff.php"/>
-    <rule ref="Symfony/Sniffs/Scope/MethodScopeSniff.php"/>
 </ruleset>
