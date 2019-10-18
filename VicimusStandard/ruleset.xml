@@ -73,7 +73,9 @@
     <rule ref="Squiz.ControlStructures.ControlSignature"/>
     <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration"/>
     <rule ref="Squiz.ControlStructures.ForLoopDeclaration"/>
-    <rule ref="Squiz.ControlStructures.InlineIfDeclaration"/>
+    <rule ref="Squiz.ControlStructures.InlineIfDeclaration">
+        <exclude name="Squiz.ControlStructures.InlineIfDeclaration.NoBrackets" />
+    </rule>
     <rule ref="Squiz.ControlStructures.LowercaseDeclaration"/>
     <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing"/>
     <rule ref="Squiz.Functions.FunctionDeclaration"/>
