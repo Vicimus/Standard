@@ -6,6 +6,9 @@
     <!-- PSR2 -->
     <rule ref="PSR2"/>
 
+    <!-- PSR12 -->
+<!--    <rule ref="PSR12"/>-->
+
     <!-- Vicimus -->
     <rule ref="VicimusStandard.Whitespace.BlankLines"/>
 
@@ -164,8 +167,9 @@
     <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/>
     <rule ref="SlevomatCodingStandard.PHP.TypeCast"/>
 
-    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>
+<!--    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>-->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
+<!--    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>-->
     <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
