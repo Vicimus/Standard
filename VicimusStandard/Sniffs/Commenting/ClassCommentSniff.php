@@ -32,6 +32,10 @@ class ClassCommentSniff extends FileCommentSniff
      */
     public function process(File $phpcsFile, $stackPtr)
     {
+        if (stripos($phpcsFile->getFilename(), '/tests/') !== false) {
+            return;
+        }
+
         $this->currentFile = $phpcsFile;
         $tokens    = $phpcsFile->getTokens();
         $type      = strtolower($tokens[$stackPtr]['content']);

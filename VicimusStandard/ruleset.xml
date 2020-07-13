@@ -7,7 +7,7 @@
     <rule ref="PSR2"/>
 
     <!-- PSR12 -->
-<!--    <rule ref="PSR12"/>-->
+    <rule ref="PSR12"/>
 
     <!-- Vicimus -->
     <rule ref="VicimusStandard.Whitespace.BlankLines"/>
@@ -116,7 +116,9 @@
     <rule ref="Zend.Files.ClosingTag"/>
 
     <!-- PEAR -->
-    <rule ref="PEAR.Commenting.FunctionComment"/>
+    <rule ref="PEAR.Commenting.FunctionComment">
+        <exclude-pattern>*/tests/*</exclude-pattern>
+    </rule>
 
     <!-- Slevomat Rules -->
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
@@ -168,8 +170,11 @@
     <rule ref="SlevomatCodingStandard.PHP.TypeCast"/>
 
 <!--    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>-->
-    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
+    <!-- Below was replaced with PSR-12 -->
+<!--    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>-->
 <!--    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>-->
+<!--    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/>-->
+<!--    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHInt"/>-->
     <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
