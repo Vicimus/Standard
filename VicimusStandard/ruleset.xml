@@ -37,6 +37,12 @@
     <rule ref="Generic.Files.OneTraitPerFile"/>
     <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
     <rule ref="Generic.Formatting.SpaceAfterCast"/>
+    <rule ref="Generic.Formatting.SpaceAfterNot">
+        <properties>
+            <property name="spacing" value="0" />
+            <property name="ignoreNewlines" value="true" />
+        </properties>
+    </rule>
     <rule ref="Generic.Functions.CallTimePassByReference"/>
     <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
     <rule ref="Generic.Metrics.CyclomaticComplexity">
@@ -59,8 +65,15 @@
     <rule ref="Generic.PHP.NoSilencedErrors"/>
     <rule ref="Generic.PHP.SAPIUsage"/>
     <rule ref="Generic.PHP.Syntax"/>
+    <rule ref="Generic.Strings.UnnecessaryStringConcat">
+        <properties>
+            <property name="allowMultiline" value="true" />
+        </properties>
+    </rule>
     <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
     <rule ref="Generic.WhiteSpace.ScopeIndent"/>
+    <rule ref="Generic.WhiteSpace.ArbitraryParenthesesSpacing"/>
+    <rule ref="Generic.WhiteSpace.SpreadOperatorSpacingAfter"/>
 
     <!-- Squiz -->
     <rule ref="Squiz.Arrays.ArrayBracketSpacing"/>
@@ -104,6 +117,12 @@
     <rule ref="Squiz.Scope.StaticThisUsage"/>
     <rule ref="Squiz.Strings.DoubleQuoteUsage"/>
     <rule ref="Squiz.Strings.EchoedStrings"/>
+    <rule ref="Squiz.Strings.ConcatenationSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+            <property name="ignoreNewlines" value="true" />
+        </properties>
+    </rule>
     <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
     <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
     <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
@@ -111,6 +130,19 @@
     <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
     <rule ref="Squiz.WhiteSpace.CastSpacing"/>
     <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
+    <rule ref="Squiz.WhiteSpace.MemberVarSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+            <property name="spacingBeforeFirst" value="0" />
+        </properties>
+    </rule>
+    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+            <property name="spacingBeforeFirst" value="0" />
+            <property name="spacingAfterLast" value="0" />
+        </properties>
+    </rule>
 
     <!-- Zend -->
     <rule ref="Zend.Files.ClosingTag"/>
@@ -184,13 +216,15 @@
     </rule>
 <!--    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>-->
 <!--    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/>-->
-<!--    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHInt"/>-->
+<!--    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>-->
     <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
-    <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint">
+        <exclude-pattern>*/tests/*</exclude-pattern>
+    </rule>
 
     <rule ref="SlevomatCodingStandard.Variables.UnusedVariable"/>
     <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
