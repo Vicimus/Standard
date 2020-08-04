@@ -215,8 +215,8 @@
         </properties>
     </rule>
 <!--    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>-->
-<!--    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/>-->
-<!--    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>-->
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
     <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
