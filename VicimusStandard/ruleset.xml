@@ -63,6 +63,7 @@
     <rule ref="Generic.PHP.DisallowShortOpenTag"/>
     <rule ref="Generic.PHP.LowerCaseKeyword"/>
     <rule ref="Generic.PHP.NoSilencedErrors"/>
+    <rule ref="Generic.PHP.RequireStrictTypes"/>
     <rule ref="Generic.PHP.SAPIUsage"/>
     <rule ref="Generic.PHP.Syntax"/>
     <rule ref="Generic.Strings.UnnecessaryStringConcat">
