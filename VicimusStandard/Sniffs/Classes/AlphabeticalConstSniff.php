@@ -81,6 +81,16 @@ class AlphabeticalConstSniff extends FileCommentSniff
                 );
             }
 
+            if ($previousVisCode && $visCode > $previousVisCode) {
+                $error = '['. $visibility . ' const ' . $name.'] should be before ['. $previousVisibility . ' const ' .$previousName.']';
+
+                $phpcsFile->addError(
+                    $error,
+                    $propertyTokenPointer,
+                    'Invalid'
+                );
+            }
+
             $previousName = $name;
             $previousVisibility = $visibility;
             $previousVisCode = $visCode;
