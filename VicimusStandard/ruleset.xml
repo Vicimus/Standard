@@ -147,11 +147,6 @@
     <!-- Zend -->
     <rule ref="Zend.Files.ClosingTag"/>
 
-    <!-- PEAR -->
-    <rule ref="PEAR.Commenting.FunctionComment">
-        <exclude-pattern>*/tests/*</exclude-pattern>
-    </rule>
-
     <!-- Slevomat Rules -->
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
 
