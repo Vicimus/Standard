@@ -57,9 +57,14 @@ class AlphabeticalConstSniff extends FileCommentSniff
                 continue;
             }
 
+            // Find the constant name token correctly
+            $nameTokenPointer = TokenHelper::findNextEffective($phpcsFile, $propertyTokenPointer + 1);
+            // Skip over any types (T_STRING, T_ARRAY_HINT, etc.)
+            while (isset($tokens[$nameTokenPointer]) && in_array($tokens[$nameTokenPointer]['code'], [T_STRING, T_ARRAY_HINT, T_CALLABLE, T_NULLABLE, T_NS_SEPARATOR])) {
+                $nameTokenPointer = TokenHelper::findNextEffective($phpcsFile, $nameTokenPointer + 1);
+            }
 
-            //$name = substr($propertyToken['content'], 1);
-            $name = $tokens[TokenHelper::findNextEffective($phpcsFile, $propertyTokenPointer + 1)]['content'];
+            $name = $tokens[$nameTokenPointer]['content'];
 
             if ($name === 'use') {
                 $findPropertiesStartTokenPointer = $propertyTokenPointer + 1;
@@ -73,7 +78,6 @@ class AlphabeticalConstSniff extends FileCommentSniff
 
             if ($previousName && strcmp($name, $previousName) < 0 && $visCode === $previousVisCode) {
                 $error = '['. $visibility . ' const ' . $name.'] should be alphabetically before ['. $previousVisibility . ' const ' .$previousName.']';
-
                 $phpcsFile->addError(
                     $error,
                     $propertyTokenPointer,
@@ -83,7 +87,6 @@ class AlphabeticalConstSniff extends FileCommentSniff
 
             if ($previousVisCode && $visCode > $previousVisCode) {
                 $error = '['. $visibility . ' const ' . $name.'] should be before ['. $previousVisibility . ' const ' .$previousName.']';
-
                 $phpcsFile->addError(
                     $error,
                     $propertyTokenPointer,
