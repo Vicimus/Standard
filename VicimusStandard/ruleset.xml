@@ -188,13 +188,19 @@
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
-
+    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat"/>
     <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
 
     <rule ref="SlevomatCodingStandard.Functions.StrictCall"/>
     <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/>
-    <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
+      <properties>
+        <property name="withSpaces" value="yes"/>
+        <property name="shortNullable" value="yes"/>
+        <property name="nullPosition" value="last"/>
+      </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
 
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
