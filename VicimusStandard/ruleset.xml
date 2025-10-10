@@ -186,7 +186,12 @@
     <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator"/>
-    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
+        <properties>
+            <property name="ignoreStandaloneIfInScope" value="yes"/>
+            <property name="ignoreOneLineTrailingIf" value="yes"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
     <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
@@ -236,9 +241,6 @@
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
-    <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint">
-        <exclude-pattern>*/tests/*</exclude-pattern>
-    </rule>
 
     <rule ref="SlevomatCodingStandard.Variables.UnusedVariable"/>
     <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
