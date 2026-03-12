@@ -1,7 +1,7 @@
 {
     "name": "vicimus/standard",
     "license": "MIT",
-    "type": "project",
+    "type": "phpcodesniffer-standard",
     "require": {
         "php": ">=7.1",
         "squizlabs/php_codesniffer": "^3.5.0",
